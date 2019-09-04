@@ -1,4 +1,4 @@
-# 模式
+# mode
 
 ?> webpack 内置的优化模式
 
@@ -6,7 +6,7 @@
 
 其默认值为 `production`， 或者你也可以选择不优化选项 `none` 。
 
-```JS
+```javascript
 module.exports = {
   mode: 'development'   // 开发模式
 }

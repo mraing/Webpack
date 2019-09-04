@@ -5,7 +5,7 @@
 
 + 简写方式
   
-```JS
+```javascript
 module.exports = {
   entry: './path/to/my/entry/file.js'
 }
@@ -13,7 +13,7 @@ module.exports = {
 
 + 对象方式
 
-```JS
+```javascript
 module.exports = {
   entry: {
     main: './path/to/my/entry/file.js'
