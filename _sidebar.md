@@ -5,5 +5,6 @@
   * [entry](/configEntry.md)
   * [output](/configOutput.md)
   * [loader](/configLoader.md)
+  * [plugin](/configPlugin.md)
 * **题外话**
   * [loader与 plugin的区别](/dig_LoaderPlugin.md)

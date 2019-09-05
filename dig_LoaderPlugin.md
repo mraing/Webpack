@@ -46,8 +46,7 @@
 对于plugin，它就是一个扩展器，它丰富了wepack本身，针对是loader结束后，webpack打包的整个过程，它并不直接操作文件，而是基于事件机制工作，会监听webpack打包过程中的某些节点，执行广泛的任务。
 
 webpack插件是一个具有 apply 属性的JavaScript对象。apply属性会被webpack compiler调用，并且compiler对象可在整个编译周期访问。
-用法：
- 由于插件可以携带参数/选项，你必须在webpack配置中，想plugins属性传入 new 实例。
+
 
 #### 安装
 
@@ -77,14 +76,15 @@ loader 插件的命名都是 `name-plugin`
 #### 使用
 
   下面将展示一个很基础的例子
-  ```javascript
-  // 初始化 mini-css-extract-plugin
-  let MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 
-plugin [
-  new MiniCSSExtractPlugin ({
+  ```javascript
+  // 找到 mini-css-extract-plugin 插件
+  const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
+
+  plugin [
+    new MiniCSSExtractPlugin ({
       // 整合CSS之后的文件名
       filename: 'main.css'
     })
-]
+  ]
   ```
